@@ -6,22 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, course, css, tags" >
     <meta name="description" content="Это базовый курс по html">
+    <link rel="stylesheet" href="styles.css">
     <title>html course</title>
 </head>
-<>
-    <h1>Столяров Виталий</h1>
-    <img src="https://sun9-71.userapi.com/impg/45eNrXJ_he9a5g1_bdPPPjX-otgqxSE5SxqWzg/lJg-BRpd948.jpg?size=1440x1920&quality=96&sign=a43b82aa83074a4a19e486ad20c5c506&type=album" alt="Мое ебало" width="300
+<div class="container">
+<div class="info">
+    <img class="avatar" src="https://sun9-71.userapi.com/impg/45eNrXJ_he9a5g1_bdPPPjX-otgqxSE5SxqWzg/lJg-BRpd948.jpg?size=1440x1920&quality=96&sign=a43b82aa83074a4a19e486ad20c5c506&type=album" alt="Мое ебало" width="300
     ">
-    <p>Меня зовут <strong>Виталий</strong>, я работаю в <em>магазине одежды</em>, и хочу сменить вектор своей жизни на программирование</p>
-   <h1>Мое хобби</h1>
-    <ol>
-        <li>Читать книги</li>
-        <li>Работать в котон</li>
-        <li>Учить верстку</li>
-    </ol>
-    <a href="https://vk.com/id_tauvin" target="_blank">VK</a>
-    <div>
-        <h1>Опыт работы</h1>
+<div>
+    <h1 class="name">Столяров Виталий</h1>
+    <p class="ops">Меня зовут <strong>Виталий</strong>, я учу <em>html и css</em>, и таким образом вникают в тяжелый и запутнный путь IT</p>
+</div>
+</div>
+    <div class="card bg-green">
+    
+            <h1 class="hh" >Мое хобби</h1>
+        <ol>
+            <li>Читать книги</li>
+            <li>Заниматся спортом</li>
+            <li>Учить верстку</li>
+        </ol>
+            <a href="https://vk.com/id_tauvin" target="_blank" class="vk">VK</a>
+            <a href="https://t.me/@Tauvin_enter" target="_blank" class="tg">Telegram</a>
+            <a href="instagram.com" target="_blank" class="ins">Instagram</a>
+    </div>
+
+
+<div class="card bg-red">
+    <h1 class="hh">Опыт работы</h1>
         <table>
             <thead>
             <tr>
@@ -32,7 +44,7 @@
              </thead>
             <tr>
                 <td>ООО "Котон-Текстиль"</td>
-                <td>Продавец</td>
+                <td>Продавец магазина одежды</td>
                 <td>02.12.2020-01.06.2021</td>
             </tr>
             <tr>
@@ -40,34 +52,45 @@
                 <td>работник склада</td>
                 <td>01.06.2021-01.06.2022</td>
             </tr>
+            <tr>
+                <td>ООО "Котон-Текстиль"</td>
+                <td>Продавец магазина одежды</td>
+                <td>02.06.2021-01.09.2022</td>
+            </tr>
+            <tr>
+                <td>ООО "Котон-Текстиль"</td>
+                <td>Работник склада</td>
+                <td>27.06.2021-Данный момент</td>
+            </tr>
         </table>
-    </div>
-    <a href="vk.com">Хунй]</a>
+</div>
 
-
+<form action="#" class="form">
         <h2>Связаться со мной</h2>
-
-        <div>
+    
+    <div class="form-row">
+    
+        <div class="form-group">
             <label for="name">Ваше имя:</label>
             <input type="text" id="name" placeholder="Введите имя" >
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="email">Ваш email:</label>
             <input type="email" id="email" placeholder="Введите email" >
         </div>
+    
+    </div>
+    
+    <div class="form-group">
+        <label for="message"> Ваше сообщение:</label> 
+         <textarea name="text" id="message" cols="25" rows="6" placeholder="Введите сообщение..." ></textarea>
+    </div>
 
-        <div>
-            <label for="message"> Ваше сообщение:</label> 
-            <br>
-            <textarea name="text" id="message" cols="25" rows="6" placeholder="Введите сообщение..." ></textarea>
-        </div>
-
-        <div>
-            <input type="submit" value="отправить" >
-        </div>
+    <div >
+        <input type="submit" value="отправить" class="lkm">
+    </div>
+</form>
+</div>
 </body>
 </html>
-
-
-
